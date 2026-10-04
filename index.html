@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xenfire</title>
+<meta name="theme-color" content="#14100e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script src="baremux/index.js"></script>
+<script src="uv/uv.bundle.js"></script>
+<script src="uv/uv.config.js"></script>
+</head>
+<body>
+<header>
+  <div id="tabbar"><div id="tabs"></div><button id="newtab" title="New tab">+</button></div>
+  <form id="bar">
+    <button type="button" id="back" title="Back">←</button>
+    <button type="button" id="fwd" title="Forward">→</button>
+    <button type="button" id="reload" title="Reload">⟳</button>
+    <button type="button" id="homebtn" title="Home">⌂</button>
+    <input id="addr" placeholder="Search or enter address" autocomplete="off" spellcheck="false">
+    <button type="button" id="star" title="Bookmark">☆</button>
+  </form>
+  <div id="status"></div>
+</header>
+<main>
+  <section id="home">
+    <h1>Xen<span>fire</span></h1>
+    <form id="homeform"><input id="homeaddr" placeholder="Search or enter address" autocomplete="off" autofocus></form>
+    <div class="tiles" id="quick"></div>
+    <h2>Bookmarks</h2>
+    <div class="tiles" id="marks"><p class="empty">Nothing yet. Press ☆ on any page.</p></div>
+  </section>
+  <div id="frames"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

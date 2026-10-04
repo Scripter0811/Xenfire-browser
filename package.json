@@ -1,0 +1,15 @@
+{
+	"name": "xenfire",
+	"version": "1.0.0",
+	"type": "module",
+	"engines": { "node": ">=20" },
+	"scripts": { "start": "node server.js" },
+	"license": "AGPL-3.0-or-later",
+	"dependencies": {
+		"@mercuryworkshop/bare-mux": "^2.1.8",
+		"@mercuryworkshop/epoxy-transport": "2.1.28",
+		"@titaniumnetwork-dev/ultraviolet": "^3.2.10",
+		"express": "^5.2.1",
+		"wisp-server-node": "1.1.7"
+	}
+}
